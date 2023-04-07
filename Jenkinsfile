@@ -7,14 +7,10 @@ pipeline{
         stage('Performing the Lint Checks'){
             steps{
                 script {
-                    sample.info('SharedLibrary','stage.googl.com')
+                    // sample.info('SharedLibrary','stage.googl.com')
+                    nodejs.lintChecks()
                 }
-                // sh "echo installing jsling"
-                // sh "npm install jslint"
-                // sh "ls -lrth node_modules/jslint/bin"
-                // sh "node_modules/jslint/bin/jslint.js server.js"
-                sh "echo Performing lint checks"
-                sh "echo Performing lint checks completed"
+
             }
         }
 
