@@ -1,2 +1,2 @@
 variable "ENV" {}
-variable "COMPONENET" {}
+variable "COMPONENT" {}
